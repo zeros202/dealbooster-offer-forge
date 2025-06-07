@@ -64,7 +64,7 @@ export const DealBoosterCanvas = () => {
 
         fabricCanvas.clear();
         fabricCanvas.add(fabricImg);
-        fabricImg.sendToBack();
+        fabricCanvas.sendObjectToBack(fabricImg);
         fabricCanvas.renderAll();
         setHasBackground(true);
         toast.success("Image uploaded successfully!");
