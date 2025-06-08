@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -12,6 +11,12 @@ import Auth from "./pages/Auth";
 import Dashboard from "./pages/Dashboard";
 import DealBooster from "./pages/DealBooster";
 import NotFound from "./pages/NotFound";
+import ProposalGenerator from "./pages/ProposalGenerator";
+import ImageEditor from "./pages/ImageEditor";
+import LandingBuilder from "./pages/LandingBuilder";
+import Templates from "./pages/Templates";
+import Analytics from "./pages/Analytics";
+import Settings from "./pages/Settings";
 
 const queryClient = new QueryClient();
 
@@ -51,7 +56,7 @@ const App = () => (
                 </ProtectedRoute>
               }
             >
-              <Route index element={<div>Proposal Generator - Coming Soon</div>} />
+              <Route index element={<ProposalGenerator />} />
             </Route>
             <Route
               path="/image-editor"
@@ -61,7 +66,7 @@ const App = () => (
                 </ProtectedRoute>
               }
             >
-              <Route index element={<div>Image Editor - Coming Soon</div>} />
+              <Route index element={<ImageEditor />} />
             </Route>
             <Route
               path="/landing-builder"
@@ -71,7 +76,7 @@ const App = () => (
                 </ProtectedRoute>
               }
             >
-              <Route index element={<div>Landing Builder - Coming Soon</div>} />
+              <Route index element={<LandingBuilder />} />
             </Route>
             <Route
               path="/templates"
@@ -81,7 +86,7 @@ const App = () => (
                 </ProtectedRoute>
               }
             >
-              <Route index element={<div>Templates - Coming Soon</div>} />
+              <Route index element={<Templates />} />
             </Route>
             <Route
               path="/analytics"
@@ -91,7 +96,7 @@ const App = () => (
                 </ProtectedRoute>
               }
             >
-              <Route index element={<div>Analytics - Coming Soon</div>} />
+              <Route index element={<Analytics />} />
             </Route>
             <Route
               path="/settings"
@@ -101,9 +106,8 @@ const App = () => (
                 </ProtectedRoute>
               }
             >
-              <Route index element={<div>Settings - Coming Soon</div>} />
+              <Route index element={<Settings />} />
             </Route>
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
