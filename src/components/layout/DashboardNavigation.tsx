@@ -8,7 +8,7 @@ import {
   Globe,
   BarChart3,
   Settings,
-  Template,
+  Layout,
   Home,
 } from 'lucide-react';
 
@@ -17,7 +17,7 @@ const navigationItems = [
   { to: '/proposal-generator', icon: FileText, label: 'Proposals' },
   { to: '/image-editor', icon: Image, label: 'Image Editor' },
   { to: '/landing-builder', icon: Globe, label: 'Landing Pages' },
-  { to: '/templates', icon: Template, label: 'Templates' },
+  { to: '/templates', icon: Layout, label: 'Templates' },
   { to: '/analytics', icon: BarChart3, label: 'Analytics' },
   { to: '/settings', icon: Settings, label: 'Settings' },
 ];
